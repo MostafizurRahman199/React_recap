@@ -12,7 +12,7 @@ export default function Fruits() {
       prize: 10,
       weight: "5gm",
       color: "Red",
-      stock: "true",
+      stock: true,
      
     },
     {
@@ -20,21 +20,21 @@ export default function Fruits() {
       prize: 12,
       weight: "6gm",
       color: "Orange",
-      stock: "true",
+      stock: false,
     },
     {
       name: "Banana",
-      prize: 20,
+      prize: 4,
       weight: "10gm",
       color: "yellow",
-      stock: "true",
+      stock: true,
     },
     {
         name : "Mango",
         prize : 20,
         weight: "4gm",
         color:"Green",
-        stock:"true"
+        stock:false
     }
   ];
   return (
