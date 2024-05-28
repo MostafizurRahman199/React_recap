@@ -7,6 +7,11 @@ export default function Form() {
     age: "",
   });
 
+const handleSubmit = (e)=>{
+    e.preventDefault();
+    console.log(value);
+}
+
   return (
     <>
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -49,6 +54,13 @@ export default function Form() {
           <h1 className="bg-violet-600 border border-pink-600 focus:ring-2 focus:ring-pink-500 focus:opacity-75 p-5">
             {value.age}{" "}
           </h1>
+
+
+          <button className="border rounded-lg bg-pink-400 focus:ring-2 focus:ring-pink-200 focus:opacity-75 p-4" onClick={(e)=>{
+                handleSubmit(e)
+          }}>Submit</button>
+
+
         </form>
       </div>
     </>
